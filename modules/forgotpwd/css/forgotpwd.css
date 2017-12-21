@@ -1,0 +1,123 @@
+body {
+    height: 100vh;
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+    font-family: 'Roboto', sans-serif !important;
+    background: url('../../global/img/7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#RootMenu {
+    display: none !important;
+}
+.ewLayout {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 15% 45% 40%;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.ewLayout > .ewMenuRow {
+    grid-column: 1/4;
+}
+
+.ewLayout > .ewContentTable {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    border-radius: 7.5px;
+    box-shadow: 0px 0px 10px lightgray;
+    justify-content: center;
+    align-content: center;
+    background: rgba(255, 255, 255, 0.975);
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.ewLayout > .ewContentTable > tbody > tr > .ewContentColumn {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.ewLayout > .ewContentTable > tbody > tr > .ewContentColumn > * {
+    grid-column: 2/3;
+}
+
+.ewLayout > .ewContentTable > tbody > tr > .ewContentColumn tr {
+    display: grid;
+}
+
+.ewLayout > .ewContentTable > tbody > tr > .ewContentColumn > p {
+    margin: 0;
+}
+
+.ewLayout > .ewContentTable > tbody > tr > .ewContentColumn .button {
+    justify-content: right;
+    display: grid;
+}
+
+button {
+    color: #3399FF;
+    border: solid 1px #3399FF;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background: white;
+    font-weight: 100;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+button:hover {
+    transform: scale(0.975);
+}
+
+button:active {
+    transform: scale(0.95);
+    background: #3399FF;
+    border-color: white;
+    color: white;
+}
+
+.phpmaker {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+a {
+    font-weight: 100;
+    color: #3399FF;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-size: 16px;
+    margin: 0;
+    color: #3399FF;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+input {
+    width: 90%;
+    padding: 5px 15px;
+    background: whitesmoke;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-bottom: solid 1px #3399FF;
+    transition: all .3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+.ewMenuRow {
+    display: none;
+}

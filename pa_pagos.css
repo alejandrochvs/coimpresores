@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#tabs{
+left: 423px;
+position: absolute;
+top: 33px;
+width: 520px;
+}
+
+#resume{
+border: 1px solid #8A0A37;
+left: 699px;
+padding: 4px;
+position: absolute;
+top: 207px;
+width: 178px;
+	background:#F8EDEF;
+}
+
+#resume div{
+	margin:10px;
+}
+
+.ui-tabs .ui-tabs-panel{
+	height: 90px;
+    overflow: auto;
+}
+
+#facturasPagar{
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	width: 480px;
+}
+#facturasPagar td{
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 4px 4px 4px 8px;
+	/*color: #308FD1;*/
+}
+
+#facturasPagar .header{
+	background:#B31D52 !important;
+	color: #FFF;
+}
+
+.butPago{
+	cursor:pointer;
+	width:39px;
+	height:16px;
+	background:url(pay_uso.png) no-repeat;
+	display:inline-block;
+	margin: 0 6px 0 3px;
+	padding-left: 17px;
+}
+
+.desactivado{
+	opacity:0.3;
+	filter:alpha(opacity=30);
+	cursor:default;
+}
+
+#dialog-confirm{
+	height:130px !important;
+}
+
+.ui-dialog{
+	width: 400px !important;
+}
+
+#tipopregunta, #consecpregunta, #pagarnumfacturas, #pagarmontototal{
+	font-weight:bold;
+}

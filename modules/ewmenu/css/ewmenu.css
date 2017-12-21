@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+#RootMenu > div > ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: #3399FF;
+    height: 100%;
+}
+
+#RootMenu > div > ul > li {
+    border: none;
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+
+#RootMenu > div > ul > li > a {
+    border: dashed 1px transparent;
+    transition: all .3s ease;
+    color: #3399FF;
+    font-weight: 300;
+}
+
+#RootMenu > div > ul > li > a:hover {
+    border-right-color: #3399FF;
+    border-left-color: #3399FF;
+    font-weight: 500;
+}
+
+#RootMenu > div {
+    background: none;
+    height: 100%;
+}
+
+#RootMenu {
+    background: none;
+    height: 100%;
+}
+
+.main-menu {
+    padding: 1%;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    box-shadow: 0px 0px 4px #3399FF;
+}
+
+*:not(.fa) {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.yuimenubar > .bd > ul:after {
+    display: none;
+}
+
+.yuimenubaritem-selected {
+    background: none !important;
+}
+
+
+
+.ewTable.ewTableSeparate {
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 2px #2a80d6;
+}
+
+.ewTable.ewTableSeparate .ewTableHeader > td {
+    background: #3399FF;
+    padding: 1%;
+    font-weight: 300;
+    border: solid 1px #2a80d6;
+}
+.ewTable.ewTableSeparate tbody {
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.ewTable.ewTableSeparate tbody tr td {
+    padding: 0.7%;
+    border-color: #2a80d6;
+    border-style: dashed;
+}
+
+.ewGrid .ewGridContent {
+    border: none !important;
+}
+
+.ewGrid {
+    width: 100%;
+}
+
+tbody > .ewTableAltRow {
+    background: aliceblue;
+    color: grey;
+    transition: all .3s ease;
+}
+
+tbody > .ewTableAltRow, .ewTableRow {
+    font-weight: 300;
+}
+
+.ewTableAltRow:hover, .ewTableRow:hover {
+    background: rgba(72, 142, 255, 0.29);
+    color: gray;
+}
+
+.ewTableAltRow:hover a, .ewTableRow:hover a {
+    color: gray;
+}
+
+.ewTableRow.ewTableSelectRow {
+    background: rgba(51, 106, 193, 0.29);
+    color: grey;
+}
+
+.ewTableRow.ewTableSelectRow a {
+    color: gray;
+}
+
+.ewTablePreviewRow > td {
+    padding: 0 !important;
+}
+.ewGridLowerPanel {
+    background: white;
+    margin-top: 2vh;
+    padding: 1%;
+    border: solid 1px whitesmoke;
+    display: grid;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+.ewContentTable {
+    padding: 2.5vh 5vw;
+}
+a {
+    outline: none;
+}
+.ewBasicSearch {
+    background: white;
+    margin-bottom: 2.5vh;
+    margin-top: 2.5vh;
+    padding: 1%;
+    border: solid 1px whitesmoke;
+    box-shadow: 0px 0px 5px whitesmoke;
+    border-radius: 5px;
+}
