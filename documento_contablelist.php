@@ -214,7 +214,7 @@ if ($bSelectLimit)
 ?>
 <p class="phpmaker ewTitle"
    style="white-space: nowrap;"><?php echo $Language->Phrase("TblTypeTABLE") ?><?php echo $documento_contable->TableCaption() ?>
-    &nbsp;&nbsp;<?php $documento_contable_list->ExportOptions->Render("body"); ?>
+    <?php $documento_contable_list->ExportOptions->Render("body"); ?>
 </p>
 <?php if ($Security->CanSearch()) { ?>
     <?php if ($documento_contable->Export == "" && $documento_contable->CurrentAction == "") { ?>
@@ -236,22 +236,22 @@ if ($bSelectLimit)
                                    id="<?php echo EW_TABLE_BASIC_SEARCH ?>" size="20"
                                    value="<?php echo ew_HtmlEncode($documento_contable->getSessionBasicSearchKeyword()) ?>">
                             <input type="Submit" name="Submit" id="Submit"
-                                   value="<?php echo ew_BtnCaption($Language->Phrase("QuickSearchBtn")) ?>">&nbsp;
-                            <a href="<?php echo $documento_contable_list->PageUrl() ?>cmd=reset"><?php echo $Language->Phrase("ShowAll") ?></a>&nbsp;
+                                   value="<?php echo ew_BtnCaption($Language->Phrase("QuickSearchBtn")) ?>">
+                            <a href="<?php echo $documento_contable_list->PageUrl() ?>cmd=reset"><?php echo $Language->Phrase("ShowAll") ?></a>
                         </div>
                         <div id="xsr_2" class="ewCssTableRow">
                             <label>
                                 <input type="radio" name="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
-                                          id="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
-                                          value=""<?php if ($documento_contable->getSessionBasicSearchType() == "") { ?> checked="checked"<?php } ?>><?php echo $Language->Phrase("ExactPhrase") ?>
+                                       id="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
+                                       value=""<?php if ($documento_contable->getSessionBasicSearchType() == "") { ?> checked="checked"<?php } ?>><?php echo $Language->Phrase("ExactPhrase") ?>
                             </label><label><input type="radio"
-                                                              name="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
-                                                              id="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
-                                                              value="AND"<?php if ($documento_contable->getSessionBasicSearchType() == "AND") { ?> checked="checked"<?php } ?>><?php echo $Language->Phrase("AllWord") ?>
+                                                  name="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
+                                                  id="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
+                                                  value="AND"<?php if ($documento_contable->getSessionBasicSearchType() == "AND") { ?> checked="checked"<?php } ?>><?php echo $Language->Phrase("AllWord") ?>
                             </label><label><input type="radio"
-                                                              name="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
-                                                              id="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
-                                                              value="OR"<?php if ($documento_contable->getSessionBasicSearchType() == "OR") { ?> checked="checked"<?php } ?>><?php echo $Language->Phrase("AnyWord") ?>
+                                                  name="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
+                                                  id="<?php echo EW_TABLE_BASIC_SEARCH_TYPE ?>"
+                                                  value="OR"<?php if ($documento_contable->getSessionBasicSearchType() == "OR") { ?> checked="checked"<?php } ?>><?php echo $Language->Phrase("AnyWord") ?>
                             </label>
                         </div>
                     </div>
@@ -582,33 +582,33 @@ $documento_contable_list->ShowMessage();
                                                 <?php if ($documento_contable_list->Pager->RecordCount > 0) { ?>
                                                 <?php if ($documento_contable_list->Pager->FirstButton->Enabled) { ?>
                                                     <a href="<?php echo $documento_contable_list->PageUrl() ?>start=<?php echo $documento_contable_list->Pager->FirstButton->Start ?>"><i
-                                                                class="fa fa-angle-double-left"></i></a>&nbsp;
+                                                                class="fa fa-angle-double-left"></i></a>
                                                 <?php } ?>
                                                 <?php if ($documento_contable_list->Pager->PrevButton->Enabled) { ?>
                                                     <a href="<?php echo $documento_contable_list->PageUrl() ?>start=<?php echo $documento_contable_list->Pager->PrevButton->Start ?>"><i
-                                                                class="fa fa-angle-left"></i></a>&nbsp;
+                                                                class="fa fa-angle-left"></i></a>
                                                 <?php } ?>
                                                 <?php foreach ($documento_contable_list->Pager->Items as $PagerItem) { ?>
                                                     <?php if ($PagerItem->Enabled) { ?><a href="<?php echo $documento_contable_list->PageUrl() ?>start=<?php echo $PagerItem->Start ?>"><?php } ?>
-                                                    <b><?php echo $PagerItem->Text ?></b><?php if ($PagerItem->Enabled) { ?></a><?php } ?>&nbsp;
+                                                    <b><?php echo $PagerItem->Text ?></b><?php if ($PagerItem->Enabled) { ?></a><?php } ?>
                                                 <?php } ?>
                                                 <?php if ($documento_contable_list->Pager->NextButton->Enabled) { ?>
                                                     <a href="<?php echo $documento_contable_list->PageUrl() ?>start=<?php echo $documento_contable_list->Pager->NextButton->Start ?>"><i
-                                                                class="fa fa-angle-right"></i></a>&nbsp;
+                                                                class="fa fa-angle-right"></i></a>&nbsp
                                                 <?php } ?>
                                                 <?php if ($documento_contable_list->Pager->LastButton->Enabled) { ?>
                                                     <a href="<?php echo $documento_contable_list->PageUrl() ?>start=<?php echo $documento_contable_list->Pager->LastButton->Start ?>"><i
-                                                                class="fa fa-angle-double-right"></i></a>&nbsp;
+                                                                class="fa fa-angle-double-right"></i></a>&nbsp
                                                 <?php } ?>
                                             </span>
                                             <span class="row">
-                                                <?php if ($documento_contable_list->Pager->ButtonCount > 0) { ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php } ?>
+                                                <?php if ($documento_contable_list->Pager->ButtonCount > 0) { ?><?php } ?>
                                                 <?php echo $Language->Phrase("Record") ?>
-                                                &nbsp;<?php echo $documento_contable_list->Pager->FromIndex ?>
-                                                &nbsp;<?php echo $Language->Phrase("To") ?>
-                                                &nbsp;<?php echo $documento_contable_list->Pager->ToIndex ?>
-                                                &nbsp;<?php echo $Language->Phrase("Of") ?>
-                                                &nbsp;<?php echo $documento_contable_list->Pager->RecordCount ?>
+                                                <?php echo $documento_contable_list->Pager->FromIndex ?>
+                                                <?php echo $Language->Phrase("To") ?>
+                                                <?php echo $documento_contable_list->Pager->ToIndex ?>
+                                                <?php echo $Language->Phrase("Of") ?>
+                                                <?php echo $documento_contable_list->Pager->RecordCount ?>
                                                 <?php } else { ?>
                                                     <?php if ($Security->CanList()) { ?>
                                                         <?php if ($documento_contable_list->SearchWhere == "0=101") { ?>
@@ -862,7 +862,7 @@ class cdocumento_contable_list
         // Export options
         $this->ExportOptions = new cListOptions();
         $this->ExportOptions->Tag = "span";
-        $this->ExportOptions->Separator = "&nbsp;&nbsp;";
+        $this->ExportOptions->Separator = "";
     }
 
     //
@@ -1281,7 +1281,7 @@ class cdocumento_contable_list
         // "view"
         $oListOpt =& $this->ListOptions->Items["view"];
         if ($Security->CanView() && $this->ShowOptionLink() && $oListOpt->Visible)
-            $oListOpt->Body = "<a class=\"ewRowLink\" href=\"" . $this->ViewUrl . "\">" . "<i class='fa fa-eye'></i>" . "</a>";
+            $oListOpt->Body = "<a class=\"ewRowLink\" href=\"" . $this->ViewUrl . "\">" . "<i class='fa fa-eye fa-2x'></i>" . "</a>";
         $this->RenderListOptionsExt();
 
         // Call ListOptions_Rendered event

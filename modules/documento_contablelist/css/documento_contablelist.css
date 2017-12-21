@@ -80,27 +80,25 @@
 .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
     font-weight: 500;
 }
-.pager {
+#tabs-2 {
     display: grid;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 100%;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
 }
-.pager > .row {
-    align-self: center;
-    text-align: center;
+
+#tabs-2 > div:nth-child(3) {
+    grid-row: 1/2;
 }
-.pager {
-    color: gray;
+
+#tabs-2 > form{
+    grid-row: 2/3;
 }
-.pager a {
-    text-decoration: none;
-}
-.pager .fa {
+
+#tabs-2 span {
     color: #3399FF;
-    font-size: 18px;
 }
-.ewPager {
-    width: 100%;
+.butPago {
+    background: none;
+    color: green;
+    justify-self: end;
 }
