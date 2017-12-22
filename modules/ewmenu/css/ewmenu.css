@@ -202,13 +202,20 @@ input[type='submit'] {
     grid-column: 3/4;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding: 4%;
+    padding: 7.5px;
+    justify-self: start;
+    margin-left: 3px;
+    border-left: transparent;
 }
 #xsr_1 input[type='text'] {
     grid-column: 1/3;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     width: 100%;
+    border: solid 1px #3399FF;
+    border-right: transparent;
+    padding: 0;
+    padding-left: 5px;
     height: 100%;
 }
 
@@ -225,6 +232,8 @@ input[type='text'] {
     border: none;
     border-bottom: solid 1px #3399FF;
     background: whitesmoke;
+    padding-left: 5px;
+    font-weight: 300;
 }
 
 #xsr_2 {
@@ -288,4 +297,78 @@ input[type='text'] {
 }
 .ewContentTable {
     min-height: 87.5vh;
+}
+.table-view {
+    border: solid 1px whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px lightgray;
+    margin-top: 3vh;
+}
+.table-view > tbody > tr > td.ewGridContent > .ewGridMiddlePanel > table > tbody > tr {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    text-align: center;
+    align-content: center;
+}
+
+.table-view > tbody > tr > td.ewGridContent > .ewGridMiddlePanel > table > tbody > tr > td {
+    padding: 10px;
+}
+
+.table-view > tbody > tr > td.ewGridContent > .ewGridMiddlePanel > table > tbody > tr > td:nth-child(1) {
+    background: #3399FF;
+    border: solid 1px #3399FF;
+    border-bottom: dashed 1px white;
+}
+
+.table-view > tbody > tr > td.ewGridContent > .ewGridMiddlePanel > table > tbody > tr:last-child > td:nth-child(1) {
+    border-bottom: inherit;
+}
+
+.table-view > tbody > tr > td.ewGridContent > .ewGridMiddlePanel > table > tbody > tr > td:nth-child(2) {
+    background: white;
+}
+.table-view > tbody > tr > td.ewGridContent > .ewGridMiddlePanel > table > tbody > tr:nth-child(2n) > td:nth-child(2) {
+    background: whitesmoke;
+}
+
+.ewContentColumn > p > a,input[type="submit"] {
+    color: #3399FF;
+    border:solid 1px #3399FF;
+    padding: 7.5px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: all .3s ease;
+    width: auto;
+}
+
+.ewContentColumn > p > input[type="submit"] {
+    align-self: end;
+}
+
+.ewContentColumn > p > a:hover,input[type="submit"]:hover {
+    background: #3399FF;
+    color: white;
+}
+
+.table-view > tbody > tr > td.ewGridContent > .ewGridMiddlePanel > table > tbody > tr > td:nth-child(2) {
+    text-align: left;
+}
+#menu_6 > .bd {
+    background: white;
+    border: solid 1px #3399FF;
+    border-radius: 5px;
+    box-shadow: none;
+}
+#menu_6 {
+    border: none;
+    box-shadow:none;
+}
+
+#menu_6 ul {
+    box-shadow: 0px 0px 5px lightgray;
+    border: none;
 }

@@ -208,7 +208,12 @@ if ($bSelectLimit)
 <?php
 $niveles_list->ShowMessage();
 ?>
-<br>
+<span class="phpmaker">
+<?php if ($Security->CanAdd()) { ?>
+    <a class="ewGridLink"
+       href="<?php echo $niveles_list->AddUrl ?>"><?php echo $Language->Phrase("AddLink") ?></a>&nbsp;&nbsp;
+<?php } ?>
+</span>
 <table cellspacing="0" class="ewGrid">
     <tr>
         <td class="ewGridContent">
@@ -421,12 +426,6 @@ $niveles_list->ShowMessage();
                             </table>
                         </form>
                     <?php } ?>
-                    <span class="phpmaker">
-<?php if ($Security->CanAdd()) { ?>
-    <a class="ewGridLink"
-       href="<?php echo $niveles_list->AddUrl ?>"><?php echo $Language->Phrase("AddLink") ?></a>&nbsp;&nbsp;
-<?php } ?>
-</span>
                 </div>
             <?php } ?>
         </td>
