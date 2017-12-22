@@ -65,6 +65,7 @@ changepwd.ValidateRequired = false;
 
 //-->
 </script>
+<link rel="stylesheet" href="modules/changepwd/css/changepwd.css">
 <p class="phpmaker ewTitle"><?php echo $Language->Phrase("ChangePwdPage") ?></p>
 <?php $changepwd->ShowPageHeader(); ?>
 <?php

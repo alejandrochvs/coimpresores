@@ -1,5 +1,5 @@
 <?php if (@$gsExport == "") { ?>
-    <p>&nbsp;</p>
+    <p></p>
     <!-- right column (end) -->
     <?php if (isset($gTimer)) $gTimer->Stop() ?>
     </td>
@@ -7,8 +7,11 @@
     </table>
     <!-- content (end) -->
     <!-- footer (begin) --><!-- *** Note: Only licensed users are allowed to remove or change the following copyright statement. *** -->
+    <link rel="stylesheet" type="text/css" href="modules/footer/css/footer.css">
     <div class="ewFooterRow">
-        <div class="ewFooterText">&nbsp;<?php echo $Language->ProjectPhrase("FooterText") ?></div>
+        <div class="ewFooterText">
+            © BASE16 2017
+        </div>
         <!-- Place other links, for example, disclaimer, here -->
     </div>
     <!-- footer (end) -->

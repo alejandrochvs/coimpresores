@@ -1,0 +1,10 @@
+.ewFooterRow {
+    background: #3399FF;
+    display: grid;
+    padding: 1%;
+    box-shadow: 0px -3px 10px lightgray;
+}
+.ewFooterText {
+    font-weight: 300;
+    text-align: right;
+}

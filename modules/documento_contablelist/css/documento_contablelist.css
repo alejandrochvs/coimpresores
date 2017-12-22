@@ -14,7 +14,7 @@
     position: fixed;
     right: 1%;
     left: auto;
-    bottom: 2.5vh;
+    bottom: 7.5vh;
     top: auto;
     border: solid 1px lightgray;
     background: aliceblue;
@@ -42,7 +42,7 @@
 
 .ui-tabs .ui-tabs-panel {
     height: auto;
-    max-height: 62.5vh;
+    max-height: 60vh;
 }
 
 .ewContentColumn {

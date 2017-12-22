@@ -202,7 +202,7 @@ if ($bSelectLimit)
 ?>
 <p class="phpmaker ewTitle"
    style="white-space: nowrap;"><?php echo $Language->Phrase("TblTypeTABLE") ?><?php echo $pagos_online->TableCaption() ?>
-      <?php $pagos_online_list->ExportOptions->Render("body"); ?>
+    <?php $pagos_online_list->ExportOptions->Render("body"); ?>
 </p>
 <?php $pagos_online_list->ShowPageHeader(); ?>
 <?php
@@ -414,27 +414,27 @@ $pagos_online_list->ShowMessage();
         <?php if (!isset($pagos_online_list->Pager)) $pagos_online_list->Pager = new cNumericPager($pagos_online_list->StartRec, $pagos_online_list->DisplayRecs, $pagos_online_list->TotalRecs, $pagos_online_list->RecRange) ?>
         <?php if ($pagos_online_list->Pager->RecordCount > 0) { ?>
         <?php if ($pagos_online_list->Pager->FirstButton->Enabled) { ?>
-            <a href="<?php echo $pagos_online_list->PageUrl() ?>start=<?php echo $pagos_online_list->Pager->FirstButton->Start ?>"><b><?php echo $Language->Phrase("PagerFirst") ?></b></a> 
+            <a href="<?php echo $pagos_online_list->PageUrl() ?>start=<?php echo $pagos_online_list->Pager->FirstButton->Start ?>"><b><?php echo $Language->Phrase("PagerFirst") ?></b></a>
         <?php } ?>
         <?php if ($pagos_online_list->Pager->PrevButton->Enabled) { ?>
-            <a href="<?php echo $pagos_online_list->PageUrl() ?>start=<?php echo $pagos_online_list->Pager->PrevButton->Start ?>"><b><?php echo $Language->Phrase("PagerPrevious") ?></b></a> 
+            <a href="<?php echo $pagos_online_list->PageUrl() ?>start=<?php echo $pagos_online_list->Pager->PrevButton->Start ?>"><b><?php echo $Language->Phrase("PagerPrevious") ?></b></a>
         <?php } ?>
         <?php foreach ($pagos_online_list->Pager->Items as $PagerItem) { ?>
             <?php if ($PagerItem->Enabled) { ?><a href="<?php echo $pagos_online_list->PageUrl() ?>start=<?php echo $PagerItem->Start ?>"><?php } ?>
-            <b><?php echo $PagerItem->Text ?></b><?php if ($PagerItem->Enabled) { ?></a><?php } ?> 
+            <b><?php echo $PagerItem->Text ?></b><?php if ($PagerItem->Enabled) { ?></a><?php } ?>
         <?php } ?>
         <?php if ($pagos_online_list->Pager->NextButton->Enabled) { ?>
-            <a href="<?php echo $pagos_online_list->PageUrl() ?>start=<?php echo $pagos_online_list->Pager->NextButton->Start ?>"><b><?php echo $Language->Phrase("PagerNext") ?></b></a> 
+            <a href="<?php echo $pagos_online_list->PageUrl() ?>start=<?php echo $pagos_online_list->Pager->NextButton->Start ?>"><b><?php echo $Language->Phrase("PagerNext") ?></b></a>
         <?php } ?>
         <?php if ($pagos_online_list->Pager->LastButton->Enabled) { ?>
-            <a href="<?php echo $pagos_online_list->PageUrl() ?>start=<?php echo $pagos_online_list->Pager->LastButton->Start ?>"><b><?php echo $Language->Phrase("PagerLast") ?></b></a> 
+            <a href="<?php echo $pagos_online_list->PageUrl() ?>start=<?php echo $pagos_online_list->Pager->LastButton->Start ?>"><b><?php echo $Language->Phrase("PagerLast") ?></b></a>
         <?php } ?>
     </span>
     <span class="row">
-        <?php if ($pagos_online_list->Pager->ButtonCount > 0) { ?>    <?php } ?>
-        <?php echo $Language->Phrase("Record") ?> <?php echo $pagos_online_list->Pager->FromIndex ?>
-         <?php echo $Language->Phrase("To") ?> <?php echo $pagos_online_list->Pager->ToIndex ?>
-         <?php echo $Language->Phrase("Of") ?> <?php echo $pagos_online_list->Pager->RecordCount ?>
+        <?php if ($pagos_online_list->Pager->ButtonCount > 0) { ?><?php } ?>
+        <?php echo $Language->Phrase("Record") ?><?php echo $pagos_online_list->Pager->FromIndex ?>
+        <?php echo $Language->Phrase("To") ?><?php echo $pagos_online_list->Pager->ToIndex ?>
+        <?php echo $Language->Phrase("Of") ?><?php echo $pagos_online_list->Pager->RecordCount ?>
         <?php } else { ?>
             <?php if ($Security->CanList()) { ?>
                 <?php if ($pagos_online_list->SearchWhere == "0=101") { ?>

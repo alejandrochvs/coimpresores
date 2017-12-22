@@ -135,3 +135,6 @@ a {
 .ewMenuRow {
     display: none;
 }
+.ewFooterRow {
+    display: none !important;
+}

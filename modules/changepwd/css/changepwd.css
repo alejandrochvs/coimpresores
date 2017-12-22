@@ -1,26 +1,3 @@
-body {
-    height: 100vh;
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
-    font-family: 'Roboto', sans-serif !important;
-    background: url('../../global/img/7.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#RootMenu {
-    display: none !important;
-}
-.ewLayout {
-    display: grid;
-    height: 100%;
-    grid-template-rows: 15% 45% 40%;
-    grid-template-columns: 30% 40% 30%;
-}
-
-.ewLayout > .ewMenuRow {
-    grid-column: 1/4;
-}
-
 .ewLayout > .ewContentTable {
     width: 100%;
     height: 100%;
@@ -118,12 +95,9 @@ input {
     transition: all .3s ease;
     font-family: 'Roboto', sans-serif;
 }
-.ewMenuRow {
-    display: none;
-}
-.ewFooterRow {
-    display: none !important;
-}
 .ewContentTable {
     min-height: auto;
+}
+.ewContentTable{
+    min-height: 90vh;
 }
